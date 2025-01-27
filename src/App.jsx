@@ -58,10 +58,10 @@ const App = () => {
         {team.map(member => (
           <li key={member.id}>
             <img src={member.img} alt={member.name} />
-            <div>{member.name}</div>
-            <div>Price: ${member.price}</div>
-            <div>Strength: {member.strength}</div>
-            <div>Agility: {member.agility}</div>
+            <h3>{member.name}</h3>
+            <p>Price: ${member.price}</p>
+            <p>Strength: {member.strength}</p>
+            <p>Agility: {member.agility}</p>
             <button onClick={() => handleRemoveFighter(member)}>Remove</button>
           </li>
         ))}
